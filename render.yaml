@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: milanika-beauty
+    runtime: rust
+    plan: free
+    buildCommand: cargo build --release
+    startCommand: ./target/release/milanika-beauty
+    healthCheckPath: /health
+    autoDeploy: true

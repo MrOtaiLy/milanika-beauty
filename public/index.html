@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f0ec">
+  <meta name="description" content="Миланика — студия красоты в Липецке. Профессиональный подход, внимательное отношение и пространство, в котором хочется остаться.">
+  <meta property="og:title" content="Миланика — студия красоты">
+  <meta property="og:description" content="Студия красоты в Липецке · Студеновская, 24">
+  <meta property="og:type" content="website">
+  <title>Миланика — студия красоты в Липецке</title>
+  <link rel="icon" href="/assets/logo.webp">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="is-locked">
+  <div class="gift-screen" id="giftScreen" role="dialog" aria-modal="true" aria-labelledby="giftTitle" aria-describedby="giftDescription">
+    <div class="gift-screen__grain"></div>
+    <div class="gift-screen__glow gift-screen__glow--one"></div>
+    <div class="gift-screen__glow gift-screen__glow--two"></div>
+    <div class="gift-copy">
+      <span class="eyebrow">С днём рождения</span>
+      <h1 id="giftTitle">Небольшой<br><em>подарок.</em></h1>
+      <p id="giftDescription">Откройте коробку — внутри сайт, созданный для «Миланики».</p>
+    </div>
+    <button class="gift" id="giftButton" type="button" aria-label="Открыть подарок">
+      <span class="gift__shadow"></span>
+      <span class="gift__ribbon gift__ribbon--vertical"></span>
+      <span class="gift__ribbon gift__ribbon--horizontal"></span>
+      <span class="gift__box"></span>
+      <span class="gift__lid">
+        <span class="gift__bow gift__bow--left"></span>
+        <span class="gift__bow gift__bow--right"></span>
+        <span class="gift__bow-center"></span>
+      </span>
+      <span class="gift__spark gift__spark--1"></span>
+      <span class="gift__spark gift__spark--2"></span>
+      <span class="gift__spark gift__spark--3"></span>
+      <span class="gift__spark gift__spark--4"></span>
+      <span class="gift__spark gift__spark--5"></span>
+    </button>
+    <div class="gift-foot">
+      <span>Миланика</span>
+      <span>Студия красоты · Липецк</span>
+    </div>
+  </div>
+
+  <div class="site-shell" id="siteShell" aria-hidden="true">
+    <header class="topbar" id="top">
+      <a class="brand" href="#top" aria-label="Миланика — в начало">
+        <span class="brand__mark"><img src="/assets/logo.webp" alt=""></span>
+        <span class="brand__name">Миланика</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">О студии</a>
+        <a href="#services">Подход</a>
+        <a href="#space">Пространство</a>
+        <a href="#qualifications">Квалификация</a>
+        <a href="#contacts">Запись</a>
+      </nav>
+      <a class="topbar__phone" href="tel:+79192527611">+7 919 252-76-11</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-pad">
+        <div class="hero__copy">
+          <div class="eyebrow reveal">Липецк · Студеновская, 24</div>
+          <h1 class="hero__title reveal reveal--delay-1">Красота,<br><em>созданная</em><br>с вниманием.</h1>
+          <p class="hero__lede reveal reveal--delay-2">«Миланика» — студия, где профессиональный опыт встречается с тёплым отношением к каждому гостю.</p>
+          <div class="hero__actions reveal reveal--delay-3">
+            <a class="button button--primary" href="tel:+79192527611">Записаться</a>
+            <a class="button button--ghost" href="#space">Смотреть студию <span>↘</span></a>
+          </div>
+          <div class="hero__meta reveal reveal--delay-4">
+            <span>Ежедневно</span><i></i><span>10:00 — 20:00</span>
+          </div>
+        </div>
+        <div class="hero__visual reveal reveal--delay-2">
+          <div class="hero__frame hero__frame--main">
+            <img src="/assets/img_5277.webp" alt="Светлый интерьер студии Миланика" fetchpriority="high">
+          </div>
+          <div class="hero__frame hero__frame--float">
+            <img src="/assets/img_5289.webp" alt="Рабочая зона студии Миланика" loading="eager">
+          </div>
+          <div class="hero__stamp"><span>beauty</span><strong>studio</strong></div>
+          <div class="hero__counter"><b>01</b><span>пространство</span></div>
+        </div>
+      </section>
+
+      <section class="intro section-pad" id="about">
+        <div class="section-label">01 <span>О студии</span></div>
+        <div class="intro__grid">
+          <div class="intro__statement reveal">
+            <span class="intro__small">Место, где</span>
+            <h2 class="display-title">можно<br><em>выдохнуть.</em></h2>
+          </div>
+          <div class="intro__copy reveal reveal--delay-1">
+            <p class="lead">Уход за собой — это не только результат в зеркале. Это время, которое вы выбираете для себя.</p>
+            <p>«Миланика» — камерная студия красоты в Липецке. Здесь важны детали: разговор перед началом, аккуратность в работе, спокойная атмосфера и ощущение, что вас действительно услышали.</p>
+            <div class="signature">Мария Рахматуллаевна Мукимова <span>·</span> основатель студии</div>
+          </div>
+        </div>
+        <div class="intro__note reveal reveal--delay-2">
+          <span>«</span>
+          <p>Профессионализм начинается там, где мастер замечает детали.</p>
+        </div>
+      </section>
+
+      <section class="approach section-pad" id="services">
+        <div class="section-label">02 <span>Подход</span></div>
+        <div class="approach__head">
+          <h2 class="display-title reveal">Не поток.<br><em>Ваш образ.</em></h2>
+          <p class="approach__lead reveal reveal--delay-1">Работа начинается с диалога и внимания к тому, какой результат подойдёт именно вам.</p>
+        </div>
+        <div class="approach__cards">
+          <article class="approach-card approach-card--rose reveal">
+            <span class="approach-card__index">01</span>
+            <div>
+              <h3>Почувствовать</h3>
+              <p>Понять желание, настроение и образ, который хочется увидеть в зеркале.</p>
+            </div>
+            <span class="approach-card__mark">✦</span>
+          </article>
+          <article class="approach-card approach-card--sage reveal reveal--delay-1">
+            <span class="approach-card__index">02</span>
+            <div>
+              <h3>Подобрать</h3>
+              <p>Выстроить решение с учётом особенностей, состояния и естественного характера волос.</p>
+            </div>
+            <span class="approach-card__mark">✦</span>
+          </article>
+          <article class="approach-card approach-card--cream reveal reveal--delay-2">
+            <span class="approach-card__index">03</span>
+            <div>
+              <h3>Создать</h3>
+              <p>Собрать образ аккуратно, профессионально и с уважением к каждой детали.</p>
+            </div>
+            <span class="approach-card__mark">✦</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="space section-pad" id="space">
+        <div class="section-label">03 <span>Пространство</span></div>
+        <div class="space__head">
+          <div>
+            <span class="space__kicker reveal">Смотрите ближе</span>
+            <h2 class="display-title reveal reveal--delay-1">Внутри —<br><em>Миланика.</em></h2>
+          </div>
+          <p class="reveal reveal--delay-2">Светлая студия, рабочие места, профессиональная косметика и живые детали реального пространства.</p>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--a reveal"><img src="/assets/img_5284.webp" alt="Зона ожидания и интерьер студии" loading="lazy"><figcaption>01 · зона ожидания</figcaption></figure>
+          <figure class="gallery__item gallery__item--b reveal reveal--delay-1"><img src="/assets/img_5280.webp" alt="Рабочая зона студии" loading="lazy"><figcaption>02 · рабочая зона</figcaption></figure>
+          <figure class="gallery__item gallery__item--c reveal reveal--delay-2"><img src="/assets/img_5287.webp" alt="Профессиональное рабочее место" loading="lazy"><figcaption>03 · рабочее место</figcaption></figure>
+          <figure class="gallery__item gallery__item--d reveal reveal--delay-3"><img src="/assets/img_5290.webp" alt="Косметика и детали студии" loading="lazy"><figcaption>04 · детали</figcaption></figure>
+          <figure class="gallery__item gallery__item--e reveal reveal--delay-1"><img src="/assets/img_5277.webp" alt="Интерьер студии Миланика" loading="lazy"><figcaption>05 · атмосфера</figcaption></figure>
+          <figure class="gallery__item gallery__item--f reveal reveal--delay-2"><img src="/assets/img_5289.webp" alt="Рабочее место и косметика" loading="lazy"><figcaption>06 · техника</figcaption></figure>
+          <div class="gallery__seal">M<br><small>миланика</small></div>
+        </div>
+      </section>
+
+      <section class="qualifications section-pad" id="qualifications">
+        <div class="section-label">04 <span>Квалификация</span></div>
+        <div class="qualifications__grid">
+          <div class="qualifications__copy">
+            <span class="qualifications__eyebrow reveal">Обучение · практика · развитие</span>
+            <h2 class="display-title reveal reveal--delay-1">Знания,<br><em>которым</em><br>доверяют.</h2>
+            <p class="qualifications__note reveal reveal--delay-2">В этом блоке появится настоящая выставка дипломов и сертификатов. Пока здесь — дизайнерские макеты-заглушки, которые можно заменить на реальные фотографии без изменения композиции.</p>
+          </div>
+          <div class="certificate-wall reveal reveal--delay-2" aria-label="Примеры оформления будущей выставки дипломов и сертификатов">
+            <article class="certificate-card certificate-card--rose"><span>Диплом</span><strong>Профессиональная<br>подготовка</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--cream"><span>Сертификат</span><strong>Повышение<br>квалификации</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--sage"><span>Курс</span><strong>Новые техники<br>и подходы</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--paper"><span>Диплом</span><strong>Авторские<br>техники</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--blush"><span>Сертификат</span><strong>Beauty<br>education</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--olive"><span>Обучение</span><strong>Практика<br>и развитие</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--sand"><span>Курс</span><strong>Современные<br>методы</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--mauve"><span>Сертификат</span><strong>Профильное<br>обучение</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--white"><span>Диплом</span><strong>Мастерство<br>и точность</strong><small>Макет · заменить на фото</small></article>
+            <article class="certificate-card certificate-card--stone"><span>Образование</span><strong>Новые знания<br>каждый год</strong><small>Макет · заменить на фото</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contacts">
+        <div class="contact__orb contact__orb--one"></div>
+        <div class="contact__orb contact__orb--two"></div>
+        <div class="section-label">05 <span>Запись</span></div>
+        <div class="contact__content">
+          <span class="eyebrow reveal">Миланика · Липецк</span>
+          <h2 class="display-title display-title--large reveal reveal--delay-1">Ваш новый<br><em>образ</em> начинается<br>с одного шага.</h2>
+          <div class="contact__row reveal reveal--delay-2">
+            <div class="contact__actions">
+              <a class="contact__phone" href="tel:+79192527611">+7 919 252-76-11</a>
+              <a class="button button--dark" href="https://yandex.ru/maps/?text=%D0%9B%D0%B8%D0%BF%D0%B5%D1%86%D0%BA%2C%20%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2024" target="_blank" rel="noreferrer">Построить маршрут <span>↗</span></a>
+            </div>
+            <div class="contact__details">
+              <span>Студеновская улица, 24</span>
+              <span>2 этаж · Липецк</span>
+              <span>Ежедневно · 10:00 — 20:00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="brand brand--footer">
+        <span class="brand__mark"><img src="/assets/logo.webp" alt=""></span>
+        <span class="brand__name">Миланика</span>
+      </div>
+      <div class="footer__center">Студия красоты · Липецк</div>
+      <a href="#top" class="footer__up">Наверх ↑</a>
+    </footer>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <a href="#about">О студии</a>
+      <a href="#services">Подход</a>
+      <a href="#space">Пространство</a>
+      <a href="#qualifications">Квалификация</a>
+      <a href="#contacts">Запись</a>
+      <a class="mobile-menu__phone" href="tel:+79192527611">Позвонить</a>
+    </div>
+  </div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
